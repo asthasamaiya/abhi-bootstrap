@@ -1,4 +1,109 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Academy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+<div class="container">
+<nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Tutorials Point</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+
+  <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="home">Home</a></li>
+      <li><a routerLink="about">About</a></li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" routerLink="library">Library <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+             <li><a routerLink="library">Java</a></li>
+             <li><a routerLink="library">Python</a></li>
+             <li><a routerLink="library">HTML</a></li>
+             <li><a routerLink="library">CSS</a></li>
+             <li><a routerLink="library">Bootstrap</a></li>
+             <li><a routerLink="library">Mysql</a></li>
+          </ul>
+        </li>
+      <li><a routerLink="contact">Contact Us</a></li>
+    </ul>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+</body>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<footer id="footer">
+       <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4 info">
+            <h3>Academy</h3>
+            <p>The online learning platform with the finest faculty and material to provide you the best services. Go Learn!</p>
+          </div>
+
+          <div class="col-sm-2 links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Library</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-3 contact">
+            <h4>Contact Us</h4>
+            <p>
+              HInjewadi, Phase 1 Road<br>
+              Pune-411057, Maharashtra<br>
+              <strong>Phone:</strong> +91 9758552069<br>
+              <strong>Email:</strong> academy@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a><i class="fa fa-twitter"></i></a>
+              <a><i class="fa fa-facebook"></i></a>
+              <a><i class="fa fa-instagram"></i></a>
+              <a><i class="fa fa-google-plus"></i></a>
+              <a><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-3 newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to get updates about latest technologies.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+   
+  </footer>
+
+</html>
