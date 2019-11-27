@@ -1,3 +1,85 @@
-p {
-  font-family: Lato;
+#footer {
+  background: #4d4d4d;
+  padding: 0 0 30px 0;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  padding: 60px 30px;
+}	
+
+#footer .info h3 {
+  font-size: 34px;
+  margin-bottom:20px;
+  padding: 2px 2px;
+  line-height: 1;
+  
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#footer .info p {
+  line-height: 24px;
+}
+
+#footer h4 {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#footer .links ul a {
+  color:white ;
+  line-height:20px;
+}
+
+#footer .links ul a:hover {
+  color: #0067d5;
+}
+
+#footer .contact p {
+  line-height: 20px;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #0067d5;
+  color: #fff;
+}
+
+#footer .newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .newsletter input[type="submit"] {
+  background: #007bff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  
+}
+
+#footer .newsletter input[type="submit"]:hover {
+  background: #0062cc;
+  transition: 0.3s;
+  cursor: pointer;
 }
